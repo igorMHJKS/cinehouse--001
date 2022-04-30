@@ -36,3 +36,15 @@ function buscarFilme(codigo){
     return codigo
     }
     (buscarFilme())
+
+    
+    function alterarStatusEmCartaz(codigo){
+        var resultado = catalogo
+        if(resultado == true) {
+            console.log("Vou ao cinema")
+        }else 
+        console.log("Fico em casa")
+        return codigo
+        }
+    (alterarStatusEmCartaz(catalogo.data))
+  
