@@ -71,3 +71,12 @@ function buscarFilme(codigo){
       }
       
       console.log(listarFilmesEmCartaz(catalogo.data));
+    
+
+      function alterarStatusEmCartaz2(id, filmes){
+        const idxFilme = filmes.find(filme => filme.codigo === id);
+        if(idxFilme >= 0){
+          filmes[idxFilme].emCartaz = !filmes[idxFilme].emCartaz;
+          return true
+        }}
+        console.log(alterarStatusEmCartaz2(catalogo.data))
