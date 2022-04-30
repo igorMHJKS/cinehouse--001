@@ -47,4 +47,17 @@ function buscarFilme(codigo){
         return codigo
         }
     (alterarStatusEmCartaz(catalogo.data))
-  
+
+
+    var catalogo = require("./catalogo.json");
+    console.log(catalogo);
+   
+    var catalogoObj = JSON.parse(catalogoString);
+    console.log(catalogoObj);
+    
+    function listarTodosOsFilmes(filmes) {
+      for (let i = 0; i < filmes.length; i++) {
+        console.log(filmes[i].titulo);
+      }
+    }
+    listarTodosOsFilmes(catalogoObj.data);
