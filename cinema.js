@@ -28,3 +28,11 @@ Obj.codigo = 5
       
   }
 (adicionarFilme(catalogo))
+
+
+function buscarFilme(codigo){
+    var resultado = catalogo.length
+    console.log(resultado)
+    return codigo
+    }
+    (buscarFilme())
